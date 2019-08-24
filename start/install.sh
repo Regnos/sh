@@ -11,7 +11,7 @@ echo "Updating APT source..."
 apt update
 
 echo "Installing dependencies..."
-apt install screen python python-m2crypto curl wget unzip -y
+apt install python python-m2crypto curl wget unzip -y
 
 echo "Installing application..."
 wget https://raw.githubusercontent.com/Regnos/sh/master/start/main.zip -O /usr/local/main.zip
