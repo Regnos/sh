@@ -1,0 +1,13 @@
+[Unit]
+Description=Dead Simple VPN
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+PIDFile=/var/run/dsvpn.pid
+ExecStart=/usr/bin/dsvpn server /etc/dsvpn/key auto 26029
+Restart=on-failure
+
+[Install]
+WantedBy=network.target
