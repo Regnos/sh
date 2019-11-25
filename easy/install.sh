@@ -2,6 +2,7 @@
 
 echo "Installing..."
 wget https://raw.githubusercontent.com/Regnos/sh/master/easy/easy -O /usr/bin/dsvpn
+chmod a+x /usr/bin/dsvpn
 
 echo "Generating key..."
 mkdir -p /etc/dsvpn
